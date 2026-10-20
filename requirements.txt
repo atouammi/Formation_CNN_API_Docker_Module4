@@ -1,0 +1,26 @@
+# Core dependencies for machine learning tutorials
+# Compatible with Google Colab
+
+# Scientific computing and data manipulation
+numpy~=2.0.2
+pandas~=2.2.0
+scipy~=1.16.0
+
+# Machine learning
+scikit-learn~=1.6.1
+tensorflow~=2.18.0
+torch~=2.6.0
+
+# Object detection (YOLO)
+ultralytics~=8.3.0
+
+# Plotting and visualization
+# graphviz~=0.21
+matplotlib~=3.10.0
+plotly~=5.24.1
+
+# Interactive widgets
+ipywidgets~=7.7.1
+
+# Jupyter environment (for local use; not needed in Colab)
+notebook>=6.5.0
