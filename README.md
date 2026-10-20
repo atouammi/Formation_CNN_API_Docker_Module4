@@ -2,6 +2,8 @@
 
 Supports pratiques du **Volet IT** de la *Formation intermédiaire et avancée en intelligence artificielle pour les femmes chercheures* (09–13 septembre 2026) : réseaux de neurones, CNN, détection d'objets, déploiement (API REST, Docker) et notions de MLOps.
 
+📑 **Slides du cours** : [dossier Google Drive](https://drive.google.com/drive/folders/1o6uLU0U3MlEFjGYVfoX6h_4q9vKQxJ8A?usp=drive_link)
+
 ## Contexte
 
 Cette formation s'inscrit dans le déploiement des formations avancées en numérique porté par le ministère de l'Efficacité du Service public et de la Transformation numérique (MESPTN), à travers l'Agence Togo Digital (ATD) et le Projet de Transformation Digitale de l'Économie Togolaise (ProDigiT). Le ProDigiT est mandaté par le ministère fédéral allemand de la Coopération économique et du Développement (BMZ) et cofinancé par l'Union européenne et le Luxembourg. La formation contribue au programme 8 de la feuille de route *Togo Digital 2025* : la redynamisation d'un écosystème d'innovation et de talents digitaux.
