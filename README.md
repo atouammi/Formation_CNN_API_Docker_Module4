@@ -1,4 +1,4 @@
-# Formation_CNN_API_Docker
+# Formation_CNN_API_Docker_Module4
 
 Supports pratiques du **Volet IT** de la *Formation intermédiaire et avancée en intelligence artificielle pour les femmes chercheures* (09–13 septembre 2026) : réseaux de neurones, CNN, détection d'objets, déploiement (API REST, Docker) et notions de MLOps.
 
@@ -37,12 +37,12 @@ La formation est validée par une attestation.
 
 | Lab | Thème | Objectif du Volet IT couvert | Colab |
 |-----|-------|------------------------------|-------|
-| `00_quick_start` | Prise en main de Colab et de VS Code | — | [![Ouvrir dans Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/atouammi/Formation_CNN_API_Docker/blob/main/Labs/00_quick_start.ipynb) |
-| `01_test_notebook` | Vérification de l'environnement (versions, graphiques) | — | [![Ouvrir dans Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/atouammi/Formation_CNN_API_Docker/blob/main/Labs/01_test_notebook.ipynb) |
-| `02_ml_fundamentals` | Régression linéaire, descente de gradient (par lot et stochastique) | Réseaux de neurones et entraînement (bases) | [![Ouvrir dans Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/atouammi/Formation_CNN_API_Docker/blob/main/Labs/02_ml_fundamentals.ipynb) |
-| `03_neural_nets` | Neurone artificiel, réseaux multicouches, chiffres manuscrits, Keras et PyTorch | Réseaux de neurones et entraînement | [![Ouvrir dans Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/atouammi/Formation_CNN_API_Docker/blob/main/Labs/03_neural_nets.ipynb) |
-| `04_breast_cancer_cnn` | CNN et transfert d'apprentissage (MobileNetV3) pour détecter le cancer du sein sur des échographies (BreastMNIST) ; métriques adaptées aux classes déséquilibrées, choix du seuil, éthique | Réseaux de neurones et vision par ordinateur | [![Ouvrir dans Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/atouammi/Formation_CNN_API_Docker/blob/main/Labs/04_breast_cancer_cnn.ipynb) |
-| `05_yolo_image_detection_example` | Détection d'objets avec YOLOv8 (Ultralytics) | Vision par ordinateur | [![Ouvrir dans Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/atouammi/Formation_CNN_API_Docker/blob/main/Labs/05_yolo_image_detection_example.ipynb) |
+| `00_quick_start` | Prise en main de Colab et de VS Code | — | [![Ouvrir dans Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/atouammi/Formation_CNN_API_Docker_Module4/blob/main/Labs/00_quick_start.ipynb) |
+| `01_test_notebook` | Vérification de l'environnement (versions, graphiques) | — | [![Ouvrir dans Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/atouammi/Formation_CNN_API_Docker_Module4/blob/main/Labs/01_test_notebook.ipynb) |
+| `02_ml_fundamentals` | Régression linéaire, descente de gradient (par lot et stochastique) | Réseaux de neurones et entraînement (bases) | [![Ouvrir dans Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/atouammi/Formation_CNN_API_Docker_Module4/blob/main/Labs/02_ml_fundamentals.ipynb) |
+| `03_neural_nets` | Neurone artificiel, réseaux multicouches, chiffres manuscrits, Keras et PyTorch | Réseaux de neurones et entraînement | [![Ouvrir dans Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/atouammi/Formation_CNN_API_Docker_Module4/blob/main/Labs/03_neural_nets.ipynb) |
+| `04_breast_cancer_cnn` | CNN et transfert d'apprentissage (MobileNetV3) pour détecter le cancer du sein sur des échographies (BreastMNIST) ; métriques adaptées aux classes déséquilibrées, choix du seuil, éthique | Réseaux de neurones et vision par ordinateur | [![Ouvrir dans Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/atouammi/Formation_CNN_API_Docker_Module4/blob/main/Labs/04_breast_cancer_cnn.ipynb) |
+| `05_yolo_image_detection_example` | Détection d'objets avec YOLOv8 (Ultralytics) | Vision par ordinateur | [![Ouvrir dans Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/atouammi/Formation_CNN_API_Docker_Module4/blob/main/Labs/05_yolo_image_detection_example.ipynb) |
 | `api/` *(à venir)* | Exposer un modèle via une API REST, conteneurisation (Docker) | Déploiement d'un modèle léger | — |
 
 Le dépôt ne contient pas encore de TP de NLP.
@@ -80,8 +80,8 @@ Cliquez sur le badge **« Open in Colab »** du notebook dans le tableau ci-dess
 Prérequis : **Python 3.11 ou 3.12**, **[VS Code](https://code.visualstudio.com/)** et ses extensions **Python** et **Jupyter**.
 
 ```bash
-git clone https://github.com/atouammi/Formation_CNN_API_Docker.git
-cd Formation_CNN_API_Docker
+git clone https://github.com/atouammi/Formation_CNN_API_Docker_Module4.git
+cd Formation_CNN_API_Docker_Module4
 python3 -m venv .venv
 source .venv/bin/activate          # Windows : .venv\Scripts\activate
 pip install -r requirements.txt
