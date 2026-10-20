@@ -35,14 +35,14 @@ La formation est validée par une attestation.
 
 ## Contenu des TP
 
-| Lab | Thème | Objectif du Volet IT couvert |
-|-----|-------|------------------------------|
-| `00_jupyter_lab_quick_start` | Prise en main de JupyterLab et de l'environnement | — |
-| `01_test_notebook` | Vérification de l'environnement (versions, graphiques) | — |
-| `02_ml_fundamentals` | Régression linéaire, descente de gradient (par lot et stochastique) | Réseaux de neurones et entraînement (bases) |
-| `03_neural_nets` | Neurone artificiel, réseaux multicouches, chiffres manuscrits, Keras et PyTorch | Réseaux de neurones et entraînement |
-| `04_yolo_image_detection_example` | Détection d'objets avec YOLOv8 (Ultralytics) | Vision par ordinateur |
-| `api/` *(à venir)* | Exposer un modèle via une API REST, conteneurisation | Déploiement d'un modèle léger |
+| Lab | Thème | Objectif du Volet IT couvert | Colab |
+|-----|-------|------------------------------|-------|
+| `00_quick_start` | Prise en main de Colab et de VS Code | — | [![Ouvrir dans Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/atouammi/Formation_CNN_API_Docker/blob/main/Labs/00_quick_start.ipynb) |
+| `01_test_notebook` | Vérification de l'environnement (versions, graphiques) | — | [![Ouvrir dans Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/atouammi/Formation_CNN_API_Docker/blob/main/Labs/01_test_notebook.ipynb) |
+| `02_ml_fundamentals` | Régression linéaire, descente de gradient (par lot et stochastique) | Réseaux de neurones et entraînement (bases) | [![Ouvrir dans Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/atouammi/Formation_CNN_API_Docker/blob/main/Labs/02_ml_fundamentals.ipynb) |
+| `03_neural_nets` | Neurone artificiel, réseaux multicouches, chiffres manuscrits, Keras et PyTorch | Réseaux de neurones et entraînement | [![Ouvrir dans Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/atouammi/Formation_CNN_API_Docker/blob/main/Labs/03_neural_nets.ipynb) |
+| `04_yolo_image_detection_example` | Détection d'objets avec YOLOv8 (Ultralytics) | Vision par ordinateur | [![Ouvrir dans Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/atouammi/Formation_CNN_API_Docker/blob/main/Labs/04_yolo_image_detection_example.ipynb) |
+| `api/` *(à venir)* | Exposer un modèle via une API REST, conteneurisation (Docker) | Déploiement d'un modèle léger | — |
 
 Le dépôt ne contient pas encore de TP de NLP.
 
@@ -50,10 +50,9 @@ Le dépôt ne contient pas encore de TP de NLP.
 
 ```
 .
-├── Dockerfile          # Environnement Jupyter (TensorFlow 2.18 + dépendances)
-├── requirements.txt    # Dépendances Python du cours
+├── requirements.txt    # Dépendances Python du cours (local et Colab)
 ├── Labs/               # Notebooks de travaux pratiques
-│   ├── 00_jupyter_lab_quick_start.ipynb
+│   ├── 00_quick_start.ipynb
 │   ├── 01_test_notebook.ipynb
 │   ├── 02_ml_fundamentals.ipynb
 │   ├── 03_neural_nets.ipynb
@@ -63,14 +62,30 @@ Le dépôt ne contient pas encore de TP de NLP.
 └── api/                # Partie API REST / déploiement (à venir)
 ```
 
-## Lancer l'environnement
+## Exécuter les notebooks
+
+Suivez les notebooks dans l'ordre, en commençant par `00_quick_start.ipynb`. Chaque notebook commence par une cellule **⚙️ Configuration** à exécuter en premier.
+
+### Option A : Google Colab (aucune installation)
+
+Cliquez sur le badge **« Open in Colab »** du notebook dans le tableau ci-dessus, puis exécutez la cellule de configuration. Elle récupère les fichiers du cours depuis GitHub et installe ce qui manque. Colab garde ses propres versions des bibliothèques principales (TensorFlow, PyTorch, NumPy…), ce qui évite une longue réinstallation.
+
+- Pour enregistrer vos modifications : **Fichier → Enregistrer une copie dans Drive**.
+- Pour le lab 04, activez le GPU : **Exécution → Modifier le type d'exécution → GPU (T4)**.
+
+### Option B : en local dans VS Code
+
+Prérequis : **Python 3.11 ou 3.12**, **[VS Code](https://code.visualstudio.com/)** et ses extensions **Python** et **Jupyter**.
 
 ```bash
-docker build -t formation-cnn .
-docker run -p 8888:8888 -v "$(pwd)/Labs:/data/Labs" formation-cnn
+git clone https://github.com/atouammi/Formation_CNN_API_Docker.git
+cd Formation_CNN_API_Docker
+python3 -m venv .venv
+source .venv/bin/activate          # Windows : .venv\Scripts\activate
+pip install -r requirements.txt
 ```
 
-Ouvrez ensuite le lien affiché dans le terminal (http://127.0.0.1:8888/...), puis suivez les notebooks dans l'ordre, en commençant par `00_jupyter_lab_quick_start.ipynb`.
+Ouvrez ensuite le dossier dans VS Code, ouvrez un notebook de `Labs/` et choisissez le noyau `.venv` (**Sélectionner un noyau** en haut à droite).
 
 ## Licence
 
