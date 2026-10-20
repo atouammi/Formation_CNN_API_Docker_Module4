@@ -45,7 +45,7 @@ La formation est validée par une attestation.
 | `05_yolo_image_detection_example` | Détection d'objets avec YOLOv8 (Ultralytics) | Vision par ordinateur | [![Ouvrir dans Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/atouammi/Formation_CNN_API_Docker_Module4/blob/main/Labs/05_yolo_image_detection_example.ipynb) |
 | `api/` *(à venir)* | Exposer un modèle via une API REST, conteneurisation (Docker) | Déploiement d'un modèle léger | — |
 
-Le dépôt ne contient pas encore de TP de NLP.
+
 
 ## Structure
 
