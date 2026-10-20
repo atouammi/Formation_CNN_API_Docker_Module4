@@ -1,6 +1,6 @@
-# Formation_CNN_API_Docker_Module4
+# Formation CNN, API et Docker – Module 3
 
-Supports pratiques du **Volet IT** de la *Formation intermédiaire et avancée en intelligence artificielle pour les femmes chercheures* (09–13 septembre 2026) : réseaux de neurones, CNN, détection d'objets, déploiement (API REST, Docker) et notions de MLOps.
+Supports pratiques du **Module 3** du **Volet IT** de la *Formation intermédiaire et avancée en intelligence artificielle pour les femmes chercheures* (09–13 septembre 2026) : réseaux de neurones, CNN, détection d'objets, déploiement (API REST, Docker) et notions de MLOps.
 
 📑 **Slides du cours** : [dossier Google Drive](https://drive.google.com/drive/folders/1o6uLU0U3MlEFjGYVfoX6h_4q9vKQxJ8A?usp=drive_link)
 
