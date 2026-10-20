@@ -41,7 +41,8 @@ La formation est validée par une attestation.
 | `01_test_notebook` | Vérification de l'environnement (versions, graphiques) | — | [![Ouvrir dans Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/atouammi/Formation_CNN_API_Docker/blob/main/Labs/01_test_notebook.ipynb) |
 | `02_ml_fundamentals` | Régression linéaire, descente de gradient (par lot et stochastique) | Réseaux de neurones et entraînement (bases) | [![Ouvrir dans Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/atouammi/Formation_CNN_API_Docker/blob/main/Labs/02_ml_fundamentals.ipynb) |
 | `03_neural_nets` | Neurone artificiel, réseaux multicouches, chiffres manuscrits, Keras et PyTorch | Réseaux de neurones et entraînement | [![Ouvrir dans Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/atouammi/Formation_CNN_API_Docker/blob/main/Labs/03_neural_nets.ipynb) |
-| `04_yolo_image_detection_example` | Détection d'objets avec YOLOv8 (Ultralytics) | Vision par ordinateur | [![Ouvrir dans Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/atouammi/Formation_CNN_API_Docker/blob/main/Labs/04_yolo_image_detection_example.ipynb) |
+| `04_breast_cancer_cnn` | CNN et transfert d'apprentissage (MobileNetV3) pour détecter le cancer du sein sur des échographies (BreastMNIST) ; métriques adaptées aux classes déséquilibrées, choix du seuil, éthique | Réseaux de neurones et vision par ordinateur | [![Ouvrir dans Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/atouammi/Formation_CNN_API_Docker/blob/main/Labs/04_breast_cancer_cnn.ipynb) |
+| `05_yolo_image_detection_example` | Détection d'objets avec YOLOv8 (Ultralytics) | Vision par ordinateur | [![Ouvrir dans Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/atouammi/Formation_CNN_API_Docker/blob/main/Labs/05_yolo_image_detection_example.ipynb) |
 | `api/` *(à venir)* | Exposer un modèle via une API REST, conteneurisation (Docker) | Déploiement d'un modèle léger | — |
 
 Le dépôt ne contient pas encore de TP de NLP.
@@ -56,7 +57,8 @@ Le dépôt ne contient pas encore de TP de NLP.
 │   ├── 01_test_notebook.ipynb
 │   ├── 02_ml_fundamentals.ipynb
 │   ├── 03_neural_nets.ipynb
-│   ├── 04_yolo_image_detection_example.ipynb
+│   ├── 04_breast_cancer_cnn.ipynb
+│   ├── 05_yolo_image_detection_example.ipynb
 │   ├── plotting_utils/ # Fonctions de visualisation utilisées par les notebooks
 │   └── assets/         # Images d'exemple
 └── api/                # Partie API REST / déploiement (à venir)
@@ -71,7 +73,7 @@ Suivez les notebooks dans l'ordre, en commençant par `00_quick_start.ipynb`. Ch
 Cliquez sur le badge **« Open in Colab »** du notebook dans le tableau ci-dessus, puis exécutez la cellule de configuration. Elle récupère les fichiers du cours depuis GitHub et installe ce qui manque. Colab garde ses propres versions des bibliothèques principales (TensorFlow, PyTorch, NumPy…), ce qui évite une longue réinstallation.
 
 - Pour enregistrer vos modifications : **Fichier → Enregistrer une copie dans Drive**.
-- Pour le lab 04, activez le GPU : **Exécution → Modifier le type d'exécution → GPU (T4)**.
+- Pour les labs 04 et 05, activez le GPU : **Exécution → Modifier le type d'exécution → GPU (T4)**.
 
 ### Option B : en local dans VS Code
 
@@ -86,6 +88,8 @@ pip install -r requirements.txt
 ```
 
 Ouvrez ensuite le dossier dans VS Code, ouvrez un notebook de `Labs/` et choisissez le noyau `.venv` (**Sélectionner un noyau** en haut à droite).
+
+> **macOS** : si un téléchargement échoue avec `CERTIFICATE_VERIFY_FAILED` (Python installé depuis python.org), exécutez une fois **Applications → Python 3.x → Install Certificates.command**.
 
 ## Licence
 

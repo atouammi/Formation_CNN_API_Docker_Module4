@@ -224,3 +224,7 @@ __marimo__/
 
 # Model weights (re-downloaded automatically by Ultralytics)
 *.pt
+
+# Données et modèles générés par les labs
+Labs/data/
+Labs/models/
